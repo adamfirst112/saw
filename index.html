@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Metode SAW</title>
+
+    <!-- LOGO TITLE (FAVICON) -->
+    <link rel="icon" type="image/png" href="sistempakar.png">
+
+
+    <!-- CSS TERPISAH -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <center><img src="sistempakar.png" id="logo"></center>
+    <h1 id="judul">Sistem Pakar Metode Simple Additive Weighting (SAW)</h1>
+
+
+    <div class="card">
+        <h2>1. Upload Data Alternatif (CSV)</h2>
+
+        <input type="file" id="csvFile" accept=".csv">
+        <button onclick="uploadCSV()">Upload</button>
+    </div>
+
+    <div class="card">
+        <h2>2. Input Kriteria</h2>
+
+        <!-- <label>Jumlah Kriteria</label><br>
+        <input type="number" id="jumlahKriteria" min="1">
+        <button onclick="buatKriteria()">Buat Kriteria</button> -->
+
+        <div id="formKriteria"></div>
+    </div>
+
+    <div class="card">
+        <h2>3. Matriks Keputusan</h2>
+        <div class="table-wrapper">
+            <div id="matriks"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>4. Normalisasi</h2>
+        <div class="table-wrapper">
+            <div id="normalisasi"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>5. Bobot × Normalisasi</h2>
+        <div class="table-wrapper">
+            <div id="terbobot"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>6. Ranking</h2>
+        <div class="table-wrapper">
+            <div id="ranking"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>7. Kesimpulan</h2>
+        <div id="kesimpulan"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
